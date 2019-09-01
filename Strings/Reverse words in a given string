@@ -1,0 +1,9 @@
+t = int(input())
+for i in range(t):
+    inputString = input()
+    #code
+    inputList = inputString.split(".")
+    outputString = ""
+    for i in inputList[::-1]:
+        outputString = outputString + i + "."
+    print(outputString[:-1])
