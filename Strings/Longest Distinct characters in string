@@ -1,0 +1,15 @@
+    inputString = input()
+    #code
+    n = len(inputString)
+    maxLength = 0
+    for i in range(0, n):
+        inputList = []
+        for j in range(i, n):
+            if inputString[j] not in inputList:
+                inputList.append(inputString[j])
+                length = len(inputList)
+                if maxLength < length:
+                    maxLength = length
+            else:
+                break
+    print(maxLength)
