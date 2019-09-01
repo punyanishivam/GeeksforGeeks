@@ -1,0 +1,9 @@
+from collections import Counter
+t = int(input())
+for i in range(t):
+    inputStrings = list(map(str, input().split()))
+    #code
+    if (Counter(inputStrings[0]) == Counter(inputStrings[1])):
+        print("YES")
+    else:
+        print("NO")
