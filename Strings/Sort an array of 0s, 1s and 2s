@@ -1,0 +1,6 @@
+t = int(input())
+for i in range(t):
+    n = int(input())
+    inputList = list(map(int, input().split()))
+    #code
+    print(*sorted(inputList))
