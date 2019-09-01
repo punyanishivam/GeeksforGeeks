@@ -1,0 +1,14 @@
+t = int(input())
+for i in range(t):
+    n = int(input())
+    inputList = list(map(int, input().split()))
+    #code
+    outputList = []
+    big = -1
+    for i in inputList[::-1]:
+        if i >= big:
+            big = i
+            outputList.append(i)
+    for i in outputList[::-1]:
+        print(i, end = " ")
+    print()
