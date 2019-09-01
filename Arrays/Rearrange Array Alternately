@@ -1,0 +1,14 @@
+    n = int(input())
+    inputList = list(input().split())
+    #code
+    outputList = []
+    small = 0
+    big = n - 1
+    while(small < big):
+        outputList.append(inputList[big])
+        outputList.append(inputList[small])
+        small += 1
+        big -= 1
+    if n % 2 != 0:
+        outputList.append(inputList[n//2])
+    print(*outputList)
