@@ -1,0 +1,5 @@
+    n = int(input())
+    inputList = list(map(int, input().split()))
+    k = int(input())
+    #code
+    print(sorted(inputList).pop(k-1))
