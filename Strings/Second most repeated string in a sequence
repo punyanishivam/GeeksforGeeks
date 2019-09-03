@@ -1,0 +1,10 @@
+for _ in range(t):
+    n = int(input())
+    inputList = list(input().split())
+    #code
+    dict = Counter(inputList)
+    outputList = sorted(dict.values(), reverse = True)
+    element = outputList[1]
+    for key, value in dict.items():
+        if value == element:
+            print(key)
