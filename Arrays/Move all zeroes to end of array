@@ -1,0 +1,12 @@
+    n = int(input())
+    inputList = list(map(int, input().split()))
+    #code
+    listOfZeroes = []
+    outputList = []
+    for i in range(n):
+        if inputList[i] == 0:
+            listOfZeroes.append(0)
+        else:
+            outputList.append(inputList[i])
+    outputList += [0] * len(listOfZeroes)
+    print(*outputList)
