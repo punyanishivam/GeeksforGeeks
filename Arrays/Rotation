@@ -1,0 +1,9 @@
+    n = int(input())
+    inputList = list(map(int, input().split()))
+    #code
+    output = 0
+    for i in range(len(inputList) - 1):
+        if inputList[i] > inputList[i+1]:
+            output = i + 1
+            break
+    print(output)
