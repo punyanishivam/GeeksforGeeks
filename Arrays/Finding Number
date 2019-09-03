@@ -1,0 +1,8 @@
+    n = int(input())
+    inputArr = input().split()
+    key = input()
+    #code
+    try:
+        print(inputArr.index(key))
+    except:
+        print(-1)
