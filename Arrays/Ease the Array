@@ -1,0 +1,16 @@
+    n = int(input()) 
+    inputList = list(map(int, input().split()))
+    #code
+    outputList = []
+    count0 = 0
+    for i in range(len(inputList) - 1):
+        if inputList[i] == inputList[i+1]:
+            inputList[i] += inputList[i]
+            inputList[i+1] = 0
+    for i in inputList:
+        if i != 0:
+            outputList.append(i)
+        else:
+            count0 += 1
+    outputList += [0] * count0
+    print(*outputList)
