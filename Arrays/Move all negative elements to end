@@ -1,0 +1,11 @@
+    n = int(input())
+    inputList = list(map(int, input().split()))
+    #code
+    negList = []
+    posList = []
+    for i in inputList:
+        if i < 0:
+            negList.append(i)
+        else:
+            posList.append(i)
+    print(*(posList[:] + negList[:]))
