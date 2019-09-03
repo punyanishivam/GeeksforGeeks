@@ -1,0 +1,15 @@
+t = int(input())
+for i in range(t):
+    inputString = input()
+    #code
+    inputList = []
+    duplicateList = []
+    outputString = ""
+    for i in inputString:
+        inputList.append(i)
+    for i in inputList:
+        if i not in duplicateList:
+            duplicateList.append(i)
+    for i in duplicateList:
+        outputString += i
+    print(outputString)
