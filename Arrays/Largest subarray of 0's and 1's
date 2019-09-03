@@ -1,0 +1,11 @@
+    newLis = lis[:]
+    maximum = 0
+    for i in range(len(newLis)):
+        if newLis[i] == 0:
+            lis[i] = -1
+    for i in range(n + 1):
+        for j in range(i + 1, n + 1):
+            if sum(lis[i:j]) == 0:
+               if len(lis[i:j]) > maximum:
+                   maximum = len(lis[i:j])
+    return maximum
