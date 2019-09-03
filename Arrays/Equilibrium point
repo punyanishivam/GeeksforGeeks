@@ -1,0 +1,16 @@
+t = int(input())
+for i in range(t):
+    n = int(input())
+    inputList = list(map(int, input().split()))
+    #code
+    position = -1
+    leftSum = 0
+    rightSum = sum(inputList)
+    for i in range(len(inputList)):
+        rightSum -= inputList[i]
+        if leftSum == rightSum:
+            position = i + 1
+            break
+        else:
+            leftSum += inputList[i]
+    print(position)
