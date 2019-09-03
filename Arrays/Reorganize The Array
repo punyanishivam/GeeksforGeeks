@@ -1,0 +1,8 @@
+    n = int(input())
+    inputList = list(map(int, input().split()))
+    #code
+    outputList = [-1] * n
+    for i in range(n):
+        if inputList[i] >= 0:
+            outputList[inputList[i]] = inputList[i]
+    print(*outputList)
