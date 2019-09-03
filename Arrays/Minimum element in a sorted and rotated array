@@ -1,0 +1,4 @@
+    n = input()
+    inputList = list(map(int, input().split()))
+    #code
+    print(min(inputList))
