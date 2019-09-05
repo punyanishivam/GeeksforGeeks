@@ -3,6 +3,7 @@ t = int(input())
 for _ in range(t):
     n = int(input())
     inputList = list(map(int, input().split()))
+    #code
     currMax = result = inputList[0]
     for i in range(1, n):
         currMax = max(inputList[i], currMax + inputList[i])
