@@ -1,0 +1,22 @@
+#Subarray with given sum
+t = int(input())
+for _ in range(t):
+    nSum = list(map(int, input().split()))
+    n = nSum[0]
+    summ = nSum[1]
+    inputList = list(map(int, input().split()))
+    #code
+    start = 0
+    currSum = 0
+    flag = -1
+    for i in range(n):
+        currSum += inputList[i]
+        while(currSum > summ):
+            currSum -= inputList[start]
+            start += 1
+        if(currSum == summ):
+            print((start + 1), (i + 1))
+            flag = 0
+            break
+    if (flag == -1):
+        print(-1)
