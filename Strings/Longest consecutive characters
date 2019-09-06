@@ -1,0 +1,15 @@
+inputString = input()
+#code
+maxCount = 0
+maxChar = ""
+prevChar = ""
+for current in inputString:
+    if prevChar == current:
+        count += 1
+    else:
+        count = 1
+    if count > maxCount:
+        maxCount = count
+        maxChar = current
+    prevChar = current
+print({maxChar : maxCount})
